@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Notes Web Page</title>
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue-axios@2.1.4/dist/vue-axios.min.js"></script>
+</head>
+<body>
+    <div id='app'>
+        <div v-for="note in myNotes">
+            <p>{{note.title}}</p>
+            <ul>
+                <li>{{note.body}}</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../webpage/app.js"></script>
+    <style>
+
+    </style>
+</body>
+</html>
+
+
